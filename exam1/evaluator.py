@@ -92,8 +92,7 @@ def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
     """
 
 
-    return  # implement me
-
+    return set(tuple_a) & set(tuple_b) # implement me
 
 def find_duplicates(tuple_in: Tuple) -> List:
     """
@@ -105,6 +104,7 @@ def find_duplicates(tuple_in: Tuple) -> List:
     lst = []
     for i in tuple_in:
         if tuple_in.count(i) > 1:
-            lst.append(i)
+            if i not in lst:
+                lst.append(i)
 
     return lst  # implement me

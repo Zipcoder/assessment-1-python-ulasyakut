@@ -42,6 +42,12 @@ def letterfreq(word):
     '''
     # Write a function that returns a dictionary of letter frequencies from a word
     '''
-    
+    x = {}
 
-    pass
+    for i in word:
+        if i not in x.keys():
+            x[i] = 1
+        elif i in x.keys():
+            x[i] += 1
+
+    return x
