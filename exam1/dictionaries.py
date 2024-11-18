@@ -17,6 +17,8 @@ def check_dict_for_key(datadict, key):
     keys = datadict.values()
     if key in keys:
         return True
+    else:
+        return False
 
 def get_key_of_min_value(ddd):
     """
@@ -42,4 +44,4 @@ def letterfreq(word):
     '''
     
 
-    return {i:word.count(i) for i in set(word)}
+    pass
