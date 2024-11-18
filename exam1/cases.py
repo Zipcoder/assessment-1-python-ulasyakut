@@ -15,6 +15,9 @@ Assume that the user’s input will indeed be in camel case.
 '''
 
 
+def camel2snake(word):
+    pass
+
 '''
 Now make one that does the opposite: snake2camel()
 '''

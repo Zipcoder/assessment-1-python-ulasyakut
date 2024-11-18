@@ -14,7 +14,9 @@ def check_dict_for_key(datadict, key):
     Check if a value exists in a dictionary
     (NO FOR loops!)
     """
-    pass
+    keys = datadict.values()
+    if key in keys:
+        return True
 
 def get_key_of_min_value(ddd):
     """
@@ -40,4 +42,4 @@ def letterfreq(word):
     '''
     
 
-    pass
+    return {i:word.count(i) for i in set(word)}

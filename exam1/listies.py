@@ -17,14 +17,16 @@ def add_item_front(lst, a):
     This function takes a list and an item,
     returning the list with the item prepended to the list
     """
-    return lst.insert(0,a)  # implement me
+    lst.insert(0,a)
+    return lst   # implement me
 
 def add_item_end(lst, a):
     """
     This function takes a list and an item,
     returning the list with the item appended to the list
     """
-    return lst.append(a)  # implement me
+    lst.append(a)
+    return lst # implement me
 
 def drop_first_two(lst):
     """
@@ -36,5 +38,10 @@ def drop_last_two(lst):
     """
     This function takes a list and returns a list with the last two items removed.
     """
-    return lst[:-2]  # implement me
+    if len(lst) <=2:
+        return [ ]
+    
+    else:
+        return lst[:-2]
+      # implement me
 
