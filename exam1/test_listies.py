@@ -1,5 +1,5 @@
 import unittest
-from exam1 import listies
+import listies
 
 
 class listiesTest(unittest.TestCase):
