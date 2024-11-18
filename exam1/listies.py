@@ -38,10 +38,9 @@ def drop_last_two(lst):
     """
     This function takes a list and returns a list with the last two items removed.
     """
-    if len(lst) <=2:
-        return [ ]
+    n_list = lst[0:-2]
+    return n_list
+
     
-    else:
-        return lst[:-2]
-      # implement me
+
 

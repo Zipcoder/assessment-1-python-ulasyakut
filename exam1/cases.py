@@ -16,7 +16,16 @@ Assume that the user’s input will indeed be in camel case.
 
 
 def camel2snake(word):
-    pass
+    
+    new_word = word[1:]
+    for i in new_word:
+        if not i.isupper():
+            word[:1] + i
+
+        elif i.isupper():   
+            pass
+
+
 
 '''
 Now make one that does the opposite: snake2camel()

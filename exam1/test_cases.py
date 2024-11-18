@@ -1,6 +1,6 @@
 
 import unittest
-from exam1 import cases
+import cases
 
 
 class CasesTest(unittest.TestCase):
